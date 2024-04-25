@@ -1,13 +1,31 @@
 {
-    "posts": [
-      { "id": "1", "title": "a title", "views": 100 },
-      { "id": "2", "title": "another title", "views": 200 }
-    ],
-    "comments": [
-      { "id": "1", "text": "a comment about post 1", "postId": "1" },
-      { "id": "2", "text": "another comment about post 1", "postId": "1" }
-    ],
-    "profile": {
-      "name": "typicode"
+  "Libros": [
+    {
+      "id": "2",
+      "title": "Segundo Libro",
+      "autor": "DanielOsorio_Dev",
+      "ISBN": "123456789",
+      "genero": "Ficcion",
+      "precio": "2 USD",
+      "disponibilidad": true
+    },
+    {
+      "id": "3",
+      "title": "Tercer Libro",
+      "autor": "DanielOsorio_Dev",
+      "ISBN": "123456789",
+      "genero": "Ficcion",
+      "precio": "2 USD",
+      "disponibilidad": true
+    },
+    {
+      "id": "63bc",
+      "title": "Hola",
+      "autor": "Yo",
+      "ISBN": "122334",
+      "genero": "Pasion",
+      "precio": "78656",
+      "disponibilidad": "Si"
     }
-  }
+  ]
+}
