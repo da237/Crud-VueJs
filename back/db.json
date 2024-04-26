@@ -26,6 +26,15 @@
       "genero": "Pasion",
       "precio": "78656",
       "disponibilidad": "Si"
+    },
+    {
+      "id": "9426",
+      "title": "Primer Libro",
+      "autor": "Daniel",
+      "ISBN": "123456",
+      "genero": "Pasion",
+      "precio": "2 uds",
+      "disponibilidad": "Si"
     }
   ]
 }

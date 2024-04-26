@@ -71,6 +71,7 @@ export default {
             <button @click="eliminarLibro(libro.id, libro.title)">
               Eliminar
             </button>
+            <router-link :to="{path:'editarLibro/'+libro.id}">Editar</router-link>
           </div>
         </tr>
       </tbody>
