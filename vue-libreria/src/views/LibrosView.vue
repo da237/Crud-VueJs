@@ -1,6 +1,7 @@
 <script>
 import axios from "axios";
 import { ref, onMounted } from "vue";
+import { RouterLink } from "vue-router";
 
 export default {
   setup() {
@@ -59,19 +60,19 @@ export default {
         </tr>
       </thead>
       <tbody>
-        <tr v-for="libro in libros" key="libro.id">
-          <hd>{{ libro.id }}</hd>
-          <hd>{{ libro.title }}</hd>
-          <hd>{{ libro.autor }}</hd>
-          <hd>{{ libro.ISBN }}</hd>
-          <hd>{{ libro.genero }}</hd>
-          <hd>{{ libro.precio }}</hd>
-          <hd>{{ libro.disponibilidad }}</hd>
-          <div>
-            <button @click="eliminarLibro(libro.id, libro.title)">
+        <tr v-for="libro in libros" :key="libro.id">
+          <td class="alinear" >{{ libro.id }}</td>
+          <td>{{ libro.title }}</td>
+          <td>{{ libro.autor }}</td>
+          <td>{{ libro.ISBN }}</td>
+          <td>{{ libro.genero }}</td>
+          <td class="alinear" >{{ libro.precio }}</td>
+          <td>{{ libro.disponibilidad }}</td>
+          <div class="botones">
+            <button class="btn eliminar" @click="eliminarLibro(libro.id, libro.title)">
               Eliminar
             </button>
-            <router-link :to="{path:'editarLibro/'+libro.id}">Editar</router-link>
+            <RouterLink class="btn editar" :to="{path:'editarLibro/'+libro.id}">Editar</RouterLink>
           </div>
         </tr>
       </tbody>
@@ -80,4 +81,62 @@ export default {
 </template>
 
 <style scoped>
+
+table {
+  width: 90%;
+  border-collapse: collapse;
+  margin: 25px auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+td ,th {
+  border: 1px solid #000;
+  padding: 10px;
+}
+
+th {
+  background-color: #e2e2e2;
+}
+
+.alinear {
+  text-align: center;
+}
+
+.botones {
+  display: flex;
+  justify-content: space-around;
+  border: solid 1px #9a9a9a;
+}
+
+.btn {
+  background-color: transparent;
+  border: none;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-family: "Wix Madefor Text", sans-serif;
+  color: #000;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  margin: 5px;
+}
+
+.eliminar {
+  background-color: red;
+  color: #fff;
+}
+
+.eliminar:hover {
+  background-color: rgb(187, 0, 0);
+  color: #fff;
+}
+
+.editar {
+  background-color: orange;
+  color: #fff;
+}
+
+.editar:hover {
+  background-color: rgb(207, 135, 0);
+}
 </style>

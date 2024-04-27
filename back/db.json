@@ -2,8 +2,8 @@
   "Libros": [
     {
       "id": "2",
-      "title": "Segundo Libro",
-      "autor": "DanielOsorio_Dev",
+      "title": "Segundo",
+      "autor": "DanielOsorio",
       "ISBN": "123456789",
       "genero": "Ficcion",
       "precio": "2 USD",
@@ -28,13 +28,22 @@
       "disponibilidad": "Si"
     },
     {
-      "id": "9426",
-      "title": "Primer Libro",
-      "autor": "Daniel",
-      "ISBN": "123456",
-      "genero": "Pasion",
-      "precio": "2 uds",
-      "disponibilidad": "Si"
+      "id": "ffdf",
+      "title": "1",
+      "autor": "1",
+      "ISBN": "1",
+      "genero": "1",
+      "precio": "1",
+      "disponibilidad": "1"
+    },
+    {
+      "id": "0cda",
+      "title": "Nuevo",
+      "autor": "Daniela",
+      "ISBN": "1234",
+      "genero": "Sufrir",
+      "precio": "30",
+      "disponibilidad": "si"
     }
   ]
 }
